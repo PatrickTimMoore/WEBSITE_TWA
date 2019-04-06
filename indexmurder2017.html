@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TWA Events :: Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<script src="jquery.js"></script>
+<script type="text/javascript" src="murder2017enter.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="twa.css">
+<link rel="icon" href="images/TWA.ico" type="image/x-icon">
+<!--[if lt IE 9]>
+<script src="html5shiv.js"></script>
+<![endif]-->
+<!-- hidetop -->
+</head>
+<!--Beginning of actual content-->
+        <body>
+        <script>
+            $( document ).ready(function() {
+                                
+                                var hidetop = $("#hidetop");
+                                var range = $("#hidetop").height();
+                                var body = $("#wrappercover");
+                                
+                                $(document).on('scroll', function() {
+                                               
+                                               var scrollTop = $(this).scrollTop();
+                                               var offset = hidetop.offset().top;
+                                               var height = hidetop.outerHeight();
+                                               offset = offset + height;
+                                               var calcA = 1 - (scrollTop - offset + range) / range;
+                                               var calcB = ( calcA * 0.7 )
+                                               
+                                               hidetop.css({
+                                                           'opacity': calcA
+                                                           });
+                                               
+                                               body.css({
+                                                        'opacity': calcB 
+                                                        });
+                                               
+                                               if (calcA > 1) {
+                                               hidetop.css({
+                                                           'opacity': 1
+                                                           });
+                                               } else if (calcA < 0) {
+                                               hidetop.css({
+                                                           'opacity': 0
+                                                           });
+                                               }
+                                               
+                                               if (calcB > '1') {
+                                               body.css({
+                                                        'opacity': 1
+                                                        });
+                                               } else if (calcB < '0') {
+                                               body.css({
+                                                        'opacity': 0
+                                                        });
+                                               }
+                                               });
+                                
+                                });
+            </script>
+        <div id="hidetop">
+            <div id="logoslideshow">
+    	<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        	<img class="logooverlay" alt="The Willows Academy" src="images/LogoOverlay.png" style="width:75%; margin:auto; position:absolute; left:0; right:0; overflow:auto; margin-top: 30%; z-index:5;">
+  				<ol class="carousel-indicators">
+    				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    				<li data-target="#myCarousel" data-slide-to="1"></li>
+    				<li data-target="#myCarousel" data-slide-to="2"></li>
+    				<li data-target="#myCarousel" data-slide-to="3"></li>
+   					<li data-target="#myCarousel" data-slide-to="4"></li>
+  				</ol>
+    <!-- Carousel items -->
+    			<div class="carousel-inner" role="listbox">
+    				<div class="item active">
+      					<img src="images/Slide1s.jpg" alt="TWA Willows Academy Annie slideshow 1">
+    				</div>
+    				<div class="item">
+    			 		<img src="images/Slide2s.jpg" alt="TWA Willows Academy Chocolate Factory slideshow 2">
+    				</div>
+    				<div class="item">
+     					<img src="images/Slide4s.jpg" alt="TWA Willows Academy Narnia slideshow 3">
+    				</div>
+    				<div class="item">
+      					<img src="images/Slide5s.jpg" alt="TWA Willows Academy Crazy Club slideshow 4">
+    				</div>
+    				<div class="item">
+      					<img src="images/Slide6s.jpg" alt="TWA Willows Academy Alice in Wonderland slideshow 5">
+      				</div>
+    			</div>
+  			</div>
+		</div>
+</div>
+        <div id="wrappercover">
+        </div>
+        <div id="wrapper">
+            <!--Top of website-->
+            <header>
+                <h1>Events at TWA</h1>
+            </header>
+            <!--Beggining of the navigation-->
+            <nav>
+                <!--<ul>
+                    <li><a href=index.html title="TWA Events :: Home">Home</a></li>
+                    <li><a href=coming.html title="TWA Events :: Coming Soon">Coming Soon!</a></li>
+                    <li><a href=error.html title="TWA Events :: Students">Students</a></li>
+                    <li><a href=error.html title="TWA Events :: Gallery">Gallery</a></li>
+                    <li><a href=error.html title="TWA Events :: About Us">About Us</a></li>
+                </ul>-->
+            </nav>
+            <!--Website page's primary content-->
+            <main>
+                <!-- Anouncements, left column -->
+                <aside>
+                    <h3>Announcements</h3>
+                    <h4>Welcome to Events At TWA!</h4>
+                    <p>We are expanding into the digital age.</p>
+                    <h4>  </h4>
+                    <p>Our Willows Events page has been made possible through the collaboration of our administration, our Theater Arts Department, and the technical skills of a young entrepreneur, Patrick Moore, a Northridge Prep graduate and brother to Willows Academy Eagles: Catherine '11, Mary '09, and Christina '01.</p>
+                    <h4></h4>
+                    <p class="donatebutton">Feel free to support our programs by donating below!</p>
+                    <form class="donatebutton" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="CNLVP39CXCC6C">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+					<h4></h4>
+                    <p class="indexcomingref">Find all the pictures from previous events, courtesy of Thomas Snitzer, <a href="http://blog.snitzerphotography.com/" title="SnitzerPhotography.com" target="_blank">HERE</a>.</p>
+               </aside>
+                <!-- "posts", right column -->
+               <div class="rightcolumn">
+                    <article>
+                        <header>
+                            <h2><a href=indexmurder2017.html title="TWA Events :: Reserve" id="indexreserve">PURCHASE TICKETS</a></h2>
+                        </header>
+                        <time datetime="2017-10-28">October 28, 2017</time>
+                        <div id="gallery">
+                        	<ul class="indexlogo">
+                            	<li>
+                                	<img src="images/MurderLogo1.png" width="675" height="300" title="Good Help Is Hard To Murder Logo" alt="Good Help Is Hard To Murder Logo">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="indexcomingref">
+                            <p>
+                            Tickets will be on sale <a href=indexmurder2017.html title="TWA Events :: Reserve">HERE</a> starting November 1st.<br><br>
+                            Click <a href="murder2017.pdf" title="TWA Events :: Cast List" target="_blank">HERE</a> to view the cast lists and showtimes!
+                            <br><br><span>November 9th, 10th, 11th</span>
+                            <br><a href="https://www.google.com/maps/place/The+Willows+Academy/@42.0389813,-87.9004968,17z/data=!3m1!4b1!4m5!3m4!1s0x880fb70b5843f373:0xb902ff83e2706c49!8m2!3d42.0389813!4d-87.8983081">1015 Rose Ave,<br> Des Plaines, IL 60016</a>
+                            <br><br><span target="_blank" class="comingcopyright" title="Copyrights :: Good Help Is Hard To Murder">Copyright @1991 by Pat Cook</span></p>
+                        </div>
+                    </article>
+               </div>
+               <div class="rightcolumn">
+                    <article>
+                        <header>
+                            <h2><a href="holidayreserve2017.html" title="Holiday Prelude :: Reserve" id="indexreserve">Holiday Prelude</a></h2>
+                        </header>
+                        <time datetime="2017-10-20">October 20, 2017</time>
+                        <div id="gallery">
+                        	<ul class="indexlogo">
+                            	<li>
+                                	<img src="images/HolidayPrelude2017Logo.png" width="675" height="300" title="Holiday Prelude Logo" alt="Holiday Prelude Logo">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="indexcomingref">
+                            <p>
+                            The Holiday Prelude is an important event which helps fund our program needs including academics, athletics, and fine arts.
+                            <br><br>
+                            Click <a href="holidayreserve2017.html" title="Holiday Prelude :: Reserve" target="_blank">HERE</a> to reserve your seat!
+                            <br><br>
+                            <a target="_blank" href="https://www.google.com/maps/place/636+N+Prospect+Ave,+Park+Ridge,+IL+60068/@41.8538123,-87.9924899,10z/data=!4m5!3m4!1s0x880fc84b66e8fea5:0xf1bd74e6c7a48dbc!8m2!3d42.0196088!4d-87.830967">Saturday, November 18, 2017 6pm<br>Park Ridge Country Club<br>686 N Prospect Park Ridge, IL 60068</a>
+                            <br><br></p>
+                        </div>
+                    </article>
+               </div>
+            </main>
+            <!--Contact and Copyright-->
+            <footer>
+                Copyright &copy; 2017-2018 The Willows Academy<br>Copyright &copy; 2016-2018 Patrick Moore<br><a href=maintenance.html id="copyrighttag" title="TWA Events :: Maintenance">Maintenance</a>
+            </footer>
+        </div>
+    </body>
+</html>
